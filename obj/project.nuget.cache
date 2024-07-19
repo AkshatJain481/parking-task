@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "iYM2eqAZSZIvGhr//Y4ma+4C/3mu6GrmZ/JKQNl0PGlRhWaayMZSJGf7geCONWeASLqlbLX/VKtxu00VfJyAOQ==",
+  "success": false,
+  "projectFilePath": "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/ParkingLotSystemBackend.csproj",
+  "expectedPackageFiles": [
+    "/home/akshat/.nuget/packages/microsoft.netcore.app.ref/8.0.6/microsoft.netcore.app.ref.8.0.6.nupkg.sha512",
+    "/home/akshat/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.6/microsoft.aspnetcore.app.ref.8.0.6.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1101",
+      "level": "Error",
+      "message": "Unable to find package Microsoft.NETCore.App.Host.arch-x64. No packages exist with this id in source(s): nuget.org",
+      "libraryId": "Microsoft.NETCore.App.Host.arch-x64",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
+}
