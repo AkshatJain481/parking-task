@@ -22,6 +22,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+app.MapGet("/", () => "Backend is running");
 
 app.UseHttpsRedirection();
 app.UseCors("AllowAnyOrigin");

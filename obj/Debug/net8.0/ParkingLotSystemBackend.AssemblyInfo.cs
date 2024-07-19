@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ParkingLotSystemBackend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c44a90bd3797a82e104483b551e9d2b82a07926d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+573c2a3068841f934db9fc2b307f188dd885377d")]
 [assembly: System.Reflection.AssemblyProductAttribute("ParkingLotSystemBackend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ParkingLotSystemBackend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
