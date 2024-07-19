@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/ParkingLotSystemBackend.csproj": {}
+    "/workspaces/parking-task/ParkingLotSystemBackend.csproj": {}
   },
   "projects": {
-    "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/ParkingLotSystemBackend.csproj": {
+    "/workspaces/parking-task/ParkingLotSystemBackend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/ParkingLotSystemBackend.csproj",
+        "projectUniqueName": "/workspaces/parking-task/ParkingLotSystemBackend.csproj",
         "projectName": "ParkingLotSystemBackend",
-        "projectPath": "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/ParkingLotSystemBackend.csproj",
-        "packagesPath": "/home/akshat/.nuget/packages/",
-        "outputPath": "/home/akshat/Desktop/new-task/ParkingLotSystemBackend/obj/",
+        "projectPath": "/workspaces/parking-task/ParkingLotSystemBackend.csproj",
+        "packagesPath": "/home/codespace/.nuget/packages/",
+        "outputPath": "/workspaces/parking-task/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/akshat/.nuget/NuGet/NuGet.Config"
+          "/home/codespace/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -32,11 +32,26 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.4.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -48,20 +63,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.6, 8.0.6]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.arch-x64",
-              "version": "[8.0.6, 8.0.6]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.6, 8.0.6]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -70,7 +71,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.106/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.303/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
