@@ -8,7 +8,7 @@ public class ParkingLotService
 
     public ParkingLotService()
     {
-        _parkingLot = new ParkingLot("PR1234", 2, 6);
+        _parkingLot = new ParkingLot("PR1234", 3, 9);
     }
 
     public string ParkVehicle(Vehicle vehicle)
