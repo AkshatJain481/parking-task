@@ -16,26 +16,63 @@ public class ParkingLot
     }
 
     private List<List<ParkingSlot>> InitializeFloors()
-    {
-        var floors = new List<List<ParkingSlot>>();
+{
+    var floors = new List<List<ParkingSlot>>();
 
-        for (int floor = 0; floor < NumberOfFloors; floor++)
+    for (int floor = 0; floor < NumberOfFloors; floor++)
+    {
+        var floorSlots = new List<ParkingSlot>();
+        
+        // Calculate the number of slots for each vehicle type
+        int slotsPerType = SlotsPerFloor / 3;
+        int remainingSlots = SlotsPerFloor % 3;
+
+        int truckSlots = slotsPerType;
+        int bikeSlots = slotsPerType;
+        int carSlots = slotsPerType + remainingSlots;
+
+        int currentSlot = 0;
+
+        // Add truck slots
+        for (int i = 0; i < truckSlots; i++, currentSlot++)
         {
-            var floorSlots = new List<ParkingSlot>();
-            for (int slot = 0; slot < SlotsPerFloor; slot++)
+            floorSlots.Add(new ParkingSlot
             {
-                string vehicleType = slot == 0 ? "TRUCK" : (slot <= 2 ? "BIKE" : "CAR");
-                floorSlots.Add(new ParkingSlot
-                {
-                    FloorNumber = floor + 1,
-                    SlotNumber = slot + 1,
-                    VehicleType = vehicleType,
-                    IsOccupied = false
-                });
-            }
-            floors.Add(floorSlots);
+                FloorNumber = floor + 1,
+                SlotNumber = currentSlot + 1,
+                VehicleType = "TRUCK",
+                IsOccupied = false
+            });
         }
 
-        return floors;
+        // Add bike slots
+        for (int i = 0; i < bikeSlots; i++, currentSlot++)
+        {
+            floorSlots.Add(new ParkingSlot
+            {
+                FloorNumber = floor + 1,
+                SlotNumber = currentSlot + 1,
+                VehicleType = "BIKE",
+                IsOccupied = false
+            });
+        }
+
+        // Add car slots
+        for (int i = 0; i < carSlots; i++, currentSlot++)
+        {
+            floorSlots.Add(new ParkingSlot
+            {
+                FloorNumber = floor + 1,
+                SlotNumber = currentSlot + 1,
+                VehicleType = "CAR",
+                IsOccupied = false
+            });
+        }
+
+        floors.Add(floorSlots);
     }
+
+    return floors;
+}
+
 }
